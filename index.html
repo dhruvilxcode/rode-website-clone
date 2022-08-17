@@ -38,7 +38,7 @@
     
 
     <!-- utilbar -->
-    <div class="flex justify-between items-center px-20 py-2 border-b">
+    <div class="flex justify-between items-center px-4 md:px-20 py-2 border-b">
         <button class="flex items-center gap-1">
             <svg width="13" height="18" viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.49992 0.557373C3.20963 0.557373 0.537109 3.22533 0.537109 6.49236C0.537109 11.0063 6.49992 17.4359 6.49992 17.4359C6.49992 17.4359 12.4627 11.0063 12.4627 6.49236C12.4627 3.22533 9.79021 0.557373 6.49992 0.557373Z" stroke="#484848" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M6.50048 9.7315C8.28058 9.7315 9.72362 8.23449 9.72362 6.38784C9.72362 4.54119 8.28058 3.04419 6.50048 3.04419C4.72039 3.04419 3.27734 4.54119 3.27734 6.38784C3.27734 8.23449 4.72039 9.7315 6.50048 9.7315Z" stroke="#484848" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
             EN
@@ -53,7 +53,7 @@
 
 
     <!-- navbar -->
-    <nav class="sticky top-0 z-[99] flex items-center justify-between gap-10 px-20 py-4 bg-white border-b">
+    <nav class="sticky top-0 z-[99] flex items-center justify-between gap-10 px-4 md:px-20 py-4 bg-white border-b">
         <div class="flex flex-row-reverse md:flex-row gap-2 items-center">
             <img src="./assets/rode_logo.svg" alt="rode_logo" class="w-20">
             <button class="md:hidden">
@@ -78,9 +78,9 @@
 
 
     <!-- rodecaster pro 2 -->
-    <div class="flex items-center w-full h-[700px] bg-dark text-white" style="background-image: url(assets/rode-rodecaster-pro-II-home-page-1920x700-rgb.jpeg);background-size: cover; background-position: center; background-repeat: no-repeat;">
-        <div class="w-1/2"></div>
-        <div class="text-center w-1/2 p-20">
+    <div class="flex flex-col md:flex-row items-center w-full md:h-[700px] bg-black bg-[url(assets/rode-rodecaster-pro-II-home-page-800x700-rgb.jpeg)] md:bg-[url(assets/rode-rodecaster-pro-II-home-page-1920x700-rgb.jpeg)] bg-contain md:bg-cover bg-no-repeat  md:bg-center text-white ">
+        <div class="w-full h-[450px] sm:h-[500px] md:w-1/2"></div>
+        <div class="text-center w-full md:w-1/2 p-4 md:p-20">
             <img src="./assets/RODECasterProII.svg" alt="rodecaster">
             <p class="mt-8 text-xl font-medium">The Revolution Is Here</p>
             <p class="mt-4 text-gray-600">The RØDECaster Pro II is the world's most powerful all-in-one audio solution for streamers, podcasters, musicians, and creators. Take your content to the next level.</p>
@@ -94,8 +94,8 @@
 
 
     <!-- nth 100 -->
-    <div class="flex items-center w-full h-[700px] bg-[#c7c7c7]" style="background-image: url(assets/rode-nth100-lifestyle-insitu-female-looking-down-grey-1920x700-rgb.jpeg);background-size: cover; background-position: center; background-repeat: no-repeat;">
-        <div class="text-center w-1/2 p-20">
+    <div class="flex flex-col md:flex-row items-center w-full md:h-[700px] md:bg-[#c7c7c7] md:bg-[url(assets/rode-nth100-lifestyle-insitu-female-looking-down-grey-1920x700-rgb.jpeg)] bg-contain md:bg-cover bg-no-repeat  md:bg-center ">
+        <div class="text-center w-full md:w-1/2 p-4 md:p-20">
             <img src="./assets/NTH-100_PL_P_RGB_01.svg" alt="nth 100">
             <p class="mt-8 text-xl font-medium">Your Search For The Perfect Headphones Is Over</p>
             <p class="mt-4 text-gray-600">Experience sound like never before with the NTH-100s. Exceptional sonic performance, superior comfort and iconic looks that inspires creativity.</p>
@@ -104,15 +104,17 @@
                 <a href="#" class="transition rounded-full px-6 py-2 bg-rode-primary hover:bg-white border-2 border-transparent hover:border-rode-primary text-white hover:text-rode-primary">BUY NOW</a>
             </div>
         </div>
-        <div class="w-1/2"></div>
+        <div class="w-full md:w-1/2"></div>
     </div>
     <!-- nth 100 -->
 
 
     <!-- nt usb -->
-    <div class="flex items-center w-full h-[700px]" style="background-image: url(assets/rode-nt-usb-webheader-v7-1920x700-rgb.jpeg);background-size: cover; background-position: center; background-repeat: no-repeat;">
-        <div class="w-1/2"></div>
-        <div class="text-center w-1/2 p-20">
+    <div class="flex flex-col md:flex-row items-center w-full md:h-[700px] md:bg-[url(assets/rode-nt-usb-webheader-v7-1920x700-rgb.jpeg)] bg-contain md:bg-cover bg-no-repeat bg-center" >
+        <div class="w-full md:w-1/2">
+            <img class="md:hidden w-full h-auto" src="./assets/rode-nt-usb-webheader-v7-800x700-rgb.jpeg" alt="nt usb">
+        </div>
+        <div class="text-center w-full md:w-1/2 p-4 md:p-20">
             <img src="./assets/NT-USB_PL_P_01.svg" alt="nt usb">
             <p class="mt-8 text-xl font-medium">Studio-Quality Recording, Made Simple</p>
             <p class="mt-4 text-gray-600">The NT-USB is a studio-quality USB condenser microphone that offers impeccable audio, elegant looks and premium features, all in an easy-to-use form factor, the NT-USB will have you sounding like a pro in seconds.</p>
@@ -125,8 +127,8 @@
     <!-- nt usb -->
 
     <!-- pod mic -->
-    <div class="flex items-center w-full h-[700px] text-white" style="background-image: url(assets/rode-podmic.jpeg);background-size: cover; background-position: center; background-repeat: no-repeat;">
-        <div class="text-center w-1/2 p-20">
+    <div class="flex flex-col-reverse md:flex-row items-center w-full h-[700px] bg-black text-white md:bg-[url(assets/rode-podmic.jpeg)] bg-contain md:bg-cover bg-no-repeat bg-center" >
+        <div class="text-center w-full md:w-1/2 p-4 md:p-20">
             <img src="./assets/PodMic_PL_PI_01.svg" alt="nth 100">
             <p class="mt-8 text-xl font-medium">Broadcast-grade Dynamic Microphone</p>
             <p class="mt-4 text-gray-300">Give your voice that rich, broadcast sound with the PodMic. Perfect for livestreaming, voice-over, podcasting and gameplay.</p>
@@ -135,15 +137,19 @@
                 <a href="#" class="transition rounded-full px-6 py-2 bg-rode-primary hover:bg-white border-2 border-transparent hover:border-rode-primary text-white hover:text-rode-primary">BUY NOW</a>
             </div>
         </div>
-        <div class="w-1/2"></div>
+        <div class="w-full md:w-1/2">
+            <img class="md:hidden w-full h-auto" src="./assets/rode-podmic-webheader-800x700-rgb-(2).jpeg" alt="pod mic">
+        </div>
     </div>
     <!-- pod mic -->
 
 
     <!-- rode wireless go 2 -->
-    <div class="flex items-center w-full h-[700px] bg-dark text-white" style="background-image: url(assets/WIGOII-WEBHEADER-02.jpeg);background-size: cover; background-position: center; background-repeat: no-repeat;">
-        <div class="w-1/2"></div>
-        <div class="text-center w-1/2 p-20">
+    <div class="flex flex-col md:flex-row items-center w-full md:h-[700px] bg-black text-white md:bg-[url(assets/WIGOII-WEBHEADER-02.jpeg)] bg-contain md:bg-cover bg-no-repeat bg-center">
+        <div class="w-full md:w-1/2">
+            <img class="md:hidden w-full h-auto" src="./assets/rode-wigo2-web-header-800x700.jpeg" alt="wigo">
+        </div>
+        <div class="text-center w-full md:w-1/2 p-4 md:p-20">
             <img src="./assets/WIGO_II_PL_PI_01.svg" alt="rodecaster">
             <p class="mt-8 text-xl font-medium">Next Generation Wireless Audio</p>
             <p class="mt-4 text-gray-600">The Wireless GO II is the world's most powerful and versatile wireless microphone. With an unparalleled feature set and ultra-compact form factor, this is next generation wireless audio for every creator.</p>
@@ -157,8 +163,8 @@
 
 
     <!-- nt-usb mini -->
-    <div class="flex items-center w-full h-[700px] text-white" style="background-image: url(assets/rode-nt-usb-mini-webheader-1920x700.jpeg);background-size: cover; background-position: center; background-repeat: no-repeat;">
-        <div class="text-center w-1/2 p-20">
+    <div class="flex flex-col-reverse md:flex-row items-center w-full md:h-[700px] text-white bg-black md:bg-[url(assets/rode-nt-usb-mini-webheader-1920x700.jpeg)] bg-contain md:bg-cover bg-no-repeat bg-center">
+        <div class="text-center w-full md:w-1/2 p-4 md:p-20">
             <img src="./assets/NT-USB_Mini_PL_PI_01.svg" alt="nth 100">
             <p class="mt-8 text-xl font-medium">Compact Sound, Incredibly Powerful</p>
             <p class="mt-4 text-gray-300">The NT-USB Mini brings pristine studio sound to a compact USB microphone, and with RØDE Connect unlocking more power, more features and more control, it's the perfect recording solution for podcasters, gamers and streamers.</p>
@@ -167,47 +173,49 @@
                 <a href="#" class="transition rounded-full px-6 py-2 bg-rode-primary hover:bg-white border-2 border-transparent hover:border-rode-primary text-white hover:text-rode-primary">BUY NOW</a>
             </div>
         </div>
-        <div class="w-1/2"></div>
+        <div class="w-full md:w-1/2">
+            <img class="md:hidden w-full h-auto" src="./assets/rode-nt-usb-mini-webheader-800x700-rgb.jpeg" alt="pod mic">
+        </div>
     </div>
     <!-- nt-usb mini -->
 
 
     <!-- explore section -->
-    <div class="px-20 py-10">
+    <div class="px-4 md:px-20 py-10">
         <h1 class="text-3xl text-center font-medium text-gray-400">Explore The RØDE Range</h1>
 
-        <a href="#" class="relative block mt-10 transition hover:opacity-90">
+        <a href="#" class="relative block mt-4 md:mt-10 transition hover:opacity-90">
             <div style="background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));">
                 <img class="w-full" src="./assets/images_page_1_modules_5357_microphones-module-1200x300-rgb.png" alt="microphones">
             </div>
-            <div class="absolute w-full h-full top-0 flex items-center justify-center text-white text-5xl font-bold">
+            <div class="absolute w-full h-full top-0 flex items-center justify-center text-white text-2xl md:text-5xl font-bold">
                 MICROPHONES
             </div>
         </a>
 
-        <a href="#" class="relative block mt-10 transition hover:opacity-90">
+        <a href="#" class="relative block mt-4 md:mt-10 transition hover:opacity-90">
             <div style="background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));">
                 <img class="w-full" src="./assets/images_page_1_modules_5359_interfaces-module-2022-1200x300-rgb.jpeg" alt="microphones">
             </div>
-            <div class="absolute w-full h-full top-0 flex items-center justify-center text-white text-5xl font-bold">
+            <div class="absolute w-full h-full top-0 flex items-center justify-center text-white text-2xl md:text-5xl font-bold">
                 INTERFACES & MIXERS
             </div>
         </a>
 
-        <a href="#" class="relative block mt-10 transition hover:opacity-90">
+        <a href="#" class="relative block mt-4 md:mt-10 transition hover:opacity-90">
             <div style="background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));">
                 <img class="w-full" src="./assets/images_page_1_modules_5361_software-module-2021-1200x300-rgb.png" alt="microphones">
             </div>
-            <div class="absolute w-full h-full top-0 flex items-center justify-center text-white text-5xl font-bold">
+            <div class="absolute w-full h-full top-0 flex items-center justify-center text-white text-2xl md:text-5xl font-bold">
                 SOFTWARE
             </div>
         </a>
 
-        <a href="#" class="relative block mt-10 transition hover:opacity-90">
+        <a href="#" class="relative block mt-4 md:mt-10 transition hover:opacity-90">
             <div style="background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));">
                 <img class="w-full" src="./assets/images_page_1_modules_5370_accessories-module-2021-1200x300-rgb.png" alt="microphones">
             </div>
-            <div class="absolute w-full h-full top-0 flex items-center justify-center text-white text-5xl font-bold">
+            <div class="absolute w-full h-full top-0 flex items-center justify-center text-white text-2xl md:text-5xl font-bold">
                 ACCESSORIES
             </div>
         </a>
@@ -218,9 +226,9 @@
 
     <!-- blog section -->
     <div class="py-10">
-        <h1 class="text-center text-rode-primary text-4xl font-bold">Latest From The RØDE Blog</h1>
+        <h1 class="text-center text-rode-primary text-2xl md:text-4xl font-bold">Latest From The RØDE Blog</h1>
 
-        <div class="mt-10 bg-gray-200 grid grid-cols-2 gap-10 px-20 py-10">
+        <div class="mt-10 bg-gray-200 grid grid-cols-1 md:grid-cols-2 gap-10 px-0 md:px-20 py-10">
             <div class="bg-white">
                 <h3 class="px-4 text-2xl font-medium text-center">The Difference Between Large-Diaphragm and Small-Diaphragm Condenser Microphones</h3>
                 <img src="assets/blog1.jpeg" class="mt-8 w-full" alt="blog">
@@ -265,11 +273,11 @@
     <footer class="py-20">
         <div class="border-b"></div>
 
-        <div class="px-20 mt-10 flex justify-between gap-10">
+        <div class="px-4 md:px-20 mt-10 flex flex-col md:flex-row items-center md:items-start justify-between gap-10">
             <div>
                 <img src="./assets/rode_logo_footer.svg" alt="rode">
             </div>
-            <div class="flex flex-wrap gap-10">
+            <div class="flex flex-col sm:flex-row flex-wrap gap-10">
                 <div class="flex flex-col gap-2">
                     <p class="font-bold">Products</p>
                     <a href="#" class="text-gray-800 hover:text-gray-500 transition">Microphones</a>
@@ -301,7 +309,7 @@
                     <a href="#" class="text-gray-800 hover:text-gray-500 transition">Create Account</a>
                 </div>
             </div>
-            <div class="text-right">
+            <div class="text-center md:text-right">
                 <p class="text-[#262626] mb-4 text-xl font-bold">
                     Subscribe to our latest<br> news and offers
                 </p>
@@ -311,7 +319,7 @@
 
         <div class="border-b mx-20 my-10"></div>
 
-        <div class="flex items-center justify-between flex-wrap gap-10 px-20">
+        <div class="flex flex-col sm:flex-row items-center justify-between flex-wrap gap-10 px-20">
             <div class="text-sm">
                 © 2022 RØDE All Rights Reserved.
             </div>
